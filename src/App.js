@@ -10,7 +10,7 @@ let convertToUrl = sectionName => {
     return sectionName.split(" ").join("_").replace(/\W/g, '').toLocaleLowerCase();
 };
 
-var Nav = (props) => {
+let Nav = (props) => {
     return (
         <Navbar inverse>
             <Grid>
@@ -31,7 +31,7 @@ var Nav = (props) => {
     );
 };
 
-var Header = () => {
+let Header = () => {
     let navSections = ["Home", "Join CCF!", "About CCF", "Social CCF", "Contact us"];
     return (
         <div className="header">
@@ -44,7 +44,7 @@ var Header = () => {
     );
 };
 
-var Slides = (props) => {
+let Slides = (props) => {
     let backgroundImage = (props.image) ? {background : props.image}: {};
     let mainClass = `slide-image col-xs-8 ${props.additionalClassName}`;
     return (
@@ -54,7 +54,7 @@ var Slides = (props) => {
     );
 };
 
-var Pane = (props) => {
+let Pane = (props) => {
     let sideClass = `pane ${props.side}-pane col-xs-2`;
     return (
         <div className={sideClass}>
