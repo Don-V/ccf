@@ -1,5 +1,16 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700";
+
+html{
+  background-image: url('/full.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
+  background-image: url('/full.jpg');
 }
 
 .App-logo {
@@ -8,10 +19,15 @@
 }
 
 .App-header {
-  background-color: #222;
+  /*background-color: #222;*/
   height: 150px;
-  padding: 20px;
+  /*padding: 20px;*/
   color: white;
+  
+}
+
+header{
+  font-family: "Open Sans";
 }
 
 .App-intro {
@@ -23,13 +39,13 @@
   /*max-width: 100%;*/
   height: 700px;
   background-size:100px 100px;
-  background-repeat:no-repeat;
+  /*background-repeat:no-repeat;*/
 }
 
 .pane{
   /*width: 100px;*/
   height: 700px;
-  background-color: aliceblue;
+  /*background-color: aliceblue;*/
 }
 
 .left-pane{
@@ -39,6 +55,40 @@
 .right-pane{
   /*float: right;*/
 }
+
+ul#menu li {
+    display:inline;
+    font-size: 150%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.underline {
+	background-color: blue; /* same as link color */
+	display: block;
+	height: 3px;
+	width: 70%;
+	padding: 0;
+  -webkit-transform: scaleX(0);
+	transform: scaleX(0);
+  -webkit-transition: all 0.45s;
+	transition: all 0.45s;
+}
+
+a:hover .underline {
+  -webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.join_ccf{
+  border-radius: 4px;
+    border-color: blue;
+    padding: 20px;
+  }
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
